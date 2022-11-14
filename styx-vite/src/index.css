@@ -1,0 +1,235 @@
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-size: 62.5%;
+    font-family: 'Manrope', sans-serif;
+    color: #f9fafb;
+    background-color: #141414;
+}
+
+/* Navbar */
+.navbar{
+    display: flex;
+    height: 4rem;
+    color: #f9fafb;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 4rem;
+    /* position: relative; */
+}
+
+.nav{
+    position: fixed;
+    top: 0;
+    z-index: 3;
+    left: 0;
+    width: 100%;
+}
+
+.nav_black {
+    background-color: black;
+    transition: ease-in-out 800ms;
+}
+
+.navbar_links .nav_link{
+    text-decoration: none;
+    color: #f9fafb;
+    font-size: 0.9rem;
+    text-transform: uppercase;
+    margin-right: 2rem;
+}
+
+.navbar_links .nav_link:hover{
+    cursor: pointer;
+}
+
+.activated{
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+.navbar .navbar_logo{
+    font-size: 1.3rem;
+    text-transform: uppercase;
+}
+
+.navbar_right{
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    /* position: absolute; */
+}
+
+
+/* Hero Section */
+.hero_image{
+    /* width: 100vw; */
+    height: 35rem;
+    position: relative;
+    color: #f9fafb;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.hero_image::before{
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to right, #141414, #141414df, #141414c7, #14141476, #14141470);
+}
+
+.hero_poster_heading{
+    z-index: 1;
+    font-size: 2.5rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    padding-left: 4rem;
+    width: 35rem;
+}
+
+.hero_poster_overview{
+    margin-top: 0.5rem;
+    font-size: 0.9rem;
+    padding-left: 4rem;
+    z-index: 1;
+    width: 40rem;
+    text-transform: capitalize;
+    width: 35rem;
+}
+
+/* About us section */
+.aboutus_section{
+    height: 30rem;
+}
+
+.section_heading{
+    padding-top: 4rem;
+    font-size: 1.5rem;
+    text-transform: uppercase;
+    text-align: center;
+    padding-bottom: 1.5rem;
+}
+
+.aboutus_content{
+    font-size: 1rem;
+    display: flex;
+    padding: 0 4rem;
+}
+
+.before_after_container{
+    padding-top: 2rem;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.before_after_component{
+    position: relative;
+    width: 30rem;
+    height: 20rem;
+}
+
+/* Card */
+.card{
+    width: 20rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.card  img{
+    width: 8rem;
+}
+
+.card .card_content_heading{
+    padding-top: 1.4rem;
+    font-size: 1.2rem;
+    text-transform: uppercase;
+}
+
+.card  .card_content{
+    padding-top: 0.8rem;
+    text-transform: capitalize;
+    font-size: 0.9rem;
+    text-align: center;
+    color: #808e9b;
+}
+
+/* Features */
+.features_section{
+    margin-top: 8rem;
+}
+
+.feature_cards{
+    display: flex;
+    padding: 2rem 4rem;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+}
+
+/* Download */
+.download_section_wrapper{
+    margin-top: 3rem;
+    padding: 0 4rem;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.download_left_wrapper{
+    width: 30rem;
+}
+
+.download_left_wrapper_text{
+    font-size: 1rem;
+    text-transform: capitalize;
+}
+
+.download_left_wrapper_images{
+    display: flex;
+    align-items: center;
+}
+
+.download_left_wrapper_images img{
+    width: 10rem;
+}
+
+.download_right_wrapper img{
+    width: 15rem;
+}
+
+.download_right_wrapper{
+    display: flex;
+    gap: 3rem;
+}
+
+
+/* Footer */
+.footer_line{
+    margin-top: 5rem;
+    height: 6rem;
+    width: 50%;
+    border-right: 2px solid #ADD100;
+}
+
+.footer{
+    padding-top: 2rem;
+    width: 100%;
+    height: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 0.8rem;
+    text-transform: uppercase;
+    color: #95afc0;
+    padding-bottom: 2rem;
+}
+
